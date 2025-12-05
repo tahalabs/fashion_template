@@ -1,13 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assetss/stylesheets/default.css">
-    <link rel="stylesheet" href="assetss/stylesheets/style.css">
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="assetss/plugins/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assetss/plugins/fontawesome/fontawesome-free-7.1.0-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assetss/stylesheets/default.css" />
+    <link rel="stylesheet" href="assetss/stylesheets/style.css" />
+
     <title>Fashion</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 top-menu">
+        <a class="navbar-brand fw-bold fs-3 brand" href="#">بوتیک</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-4" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="categoryDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                دسته بندی
+              </a>
+              <div
+                class="dropdown-menu p-3 custom-dropdown"
+                aria-labelledby="categoryDropdown"
+              >
+                <div class="row">
+                  <div class="col-6">
+                    <h6 class="dropdown-header">لباس</h6>
+                    <a class="dropdown-item" href="#">مردانه</a>
+                    <a class="dropdown-item" href="#">زنانه</a>
+                  </div>
+                  <div class="col-6">
+                    <h6 class="dropdown-header">اکسسوری</h6>
+                    <a class="dropdown-item" href="#">کفش</a>
+                    <a class="dropdown-item" href="#">کیف</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="#">صفحه ها</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">وبلاگ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">درباره ما</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <script src="assetss/plugins/jquery/jquery.min.js"></script>
+    <script src="assetss/plugins/fontawesome/fontawesome-free-7.1.0-web/js/all.min.js"></script>
+    <script src="assetss/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
