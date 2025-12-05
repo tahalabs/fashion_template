@@ -1,6 +1,109 @@
 header {
   direction: rtl;
+  height: 85px;
+  border-bottom: 1px solid #ebebeb;
 }
-header .top-menu .brand {
+header .right {
+  height: 85px;
+}
+header .right .top-menu {
+  height: 85px;
+}
+header .right .top-menu .brand {
   padding-right: 2%;
+}
+header .left {
+  height: 85px;
+}
+header .left .search-area {
+  box-sizing: border-box;
+  height: 85px;
+}
+header .left .search-area form {
+  border-right: 1px solid #ebebeb;
+  height: 85px;
+  position: relative;
+}
+header .left .search-area form input {
+  height: 85px;
+  width: 200px;
+  padding: 0 60px 0 15px;
+  color: #787878;
+  font-size: 14px;
+  font-weight: 500;
+  transition-duration: 500ms;
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+}
+header .left .search-area form input:focus {
+  width: 350px;
+  border: none;
+  outline: none !important;
+  border-bottom: 1px solid #ebebeb;
+}
+header .left .search-area form button {
+  text-transform: none;
+  position: absolute;
+  top: 40%;
+  right: 30px;
+  background-color: transparent;
+  border: none;
+  color: #787878;
+}
+header .left .favorite {
+  width: 90px;
+  height: 100%;
+  display: block;
+  border-right: 1px solid #ebebeb;
+  line-height: 80px;
+}
+header .left .favorite a {
+  width: 90px;
+  height: 100%;
+  display: block;
+  border-right: 1px solid #ebebeb;
+  line-height: 80px;
+  text-align: center;
+}
+header .left .favorite a img {
+  max-width: 25px;
+  height: auto;
+}
+header .left .user-login-info {
+  width: 90px;
+  height: 100%;
+  display: block;
+  border-right: 1px solid #ebebeb;
+  line-height: 80px;
+}
+header .left .user-login-info a {
+  width: 90px;
+  height: 100%;
+  display: block;
+  border-right: 1px solid #ebebeb;
+  line-height: 80px;
+  text-align: center;
+}
+header .left .user-login-info a img {
+  max-width: 25px;
+  height: auto;
+}
+header .left .cart-area {
+  width: 90px;
+  height: 100%;
+  display: block;
+  border-right: 1px solid #ebebeb;
+  line-height: 80px;
+}
+header .left .cart-area a {
+  width: 90px;
+  height: 100%;
+  display: block;
+  border-right: 1px solid #ebebeb;
+  line-height: 80px;
+  text-align: center;
+}
+header .left .cart-area a img {
+  max-width: 25px;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */

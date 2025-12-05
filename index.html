@@ -1,53 +1,36 @@
 <!DOCTYPE html>
 <html lang="fa">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="assetss/plugins/bootstrap/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="assetss/plugins/fontawesome/fontawesome-free-7.1.0-web/css/all.min.css"
-    />
-    <link rel="stylesheet" href="assetss/stylesheets/default.css" />
-    <link rel="stylesheet" href="assetss/stylesheets/style.css" />
 
-    <title>Fashion</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 top-menu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assetss/plugins/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assetss/plugins/fontawesome/fontawesome-free-7.1.0-web/css/all.min.css" />
+  <link rel="stylesheet" href="assetss/stylesheets/default.css" />
+  <link rel="stylesheet" href="assetss/stylesheets/style.css" />
+
+  <title>Fashion</title>
+</head>
+
+<body>
+  <header class="d-flex w-100 align-item-center" dir="rtl">
+
+    <!-- تاپ منو سمت راست صفحه که در حالت دسکتاپ 50 درصد صفحه را میگیرد -->
+    <div class="right w-50">
+      <nav class="navbar navbar-expand-lg navbar-light p-3 top-menu">
         <a class="navbar-brand fw-bold fs-3 brand" href="#">بوتیک</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse me-4" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="categoryDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <a class="nav-link dropdown-toggle" href="#" id="categoryDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 دسته بندی
               </a>
-              <div
-                class="dropdown-menu p-3 custom-dropdown"
-                aria-labelledby="categoryDropdown"
-              >
+              <div class="dropdown-menu p-3 custom-dropdown" aria-labelledby="categoryDropdown">
                 <div class="row">
                   <div class="col-6">
                     <h6 class="dropdown-header">لباس</h6>
@@ -75,11 +58,42 @@
           </ul>
         </div>
       </nav>
-    </header>
+    </div>
+    <!--تاپ منو سمت چپ صفحه که 50 درصد صفحه را در سمت چپ میگیرد-->
+    <div class="left w-50 position-relative justify-content-end d-flex">
 
-    <script src="assetss/plugins/jquery/jquery.min.js"></script>
-    <script src="assetss/plugins/fontawesome/fontawesome-free-7.1.0-web/js/all.min.js"></script>
-    <script src="assetss/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts/script.js"></script>
-  </body>
+      <div class="search-area">
+        <form action="#" method="post">
+          <button type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+          <input type="search" name="search" id="headerSearch" placeholder="جست و جو ..." />
+
+        </form>
+      </div>
+
+      <div class="favorite">
+        <a href="">
+            <img src="images/heart.svg" alt="">
+        </a>
+      </div>
+      <div class="user-login-info">
+        <a href="">
+            <img src="images/user.svg" alt="">
+        </a>
+      </div>
+      <div class="cart-area">
+        <a href="">
+            <img src="images/bag.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <script src="assetss/plugins/jquery/jquery.min.js"></script>
+  <script src="assetss/plugins/fontawesome/fontawesome-free-7.1.0-web/js/all.min.js"></script>
+  <script src="assetss/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
 </html>
