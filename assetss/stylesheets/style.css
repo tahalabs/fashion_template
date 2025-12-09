@@ -113,7 +113,7 @@ header .left .cart-area a img {
   height: 600px;
 }
 .welcome-area .container {
-  padding: 0 5%;
+  padding: 0 15px;
   margin: 0 auto;
   width: 100%;
 }
@@ -162,4 +162,51 @@ header .left .cart-area a img {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.top-category-area {
+  padding: 80px 0;
+}
+.top-category-area .container {
+  width: 100%;
+  padding: 0 15px;
+}
+.top-category-area .container .single-category-area {
+  position: relative;
+  height: 240px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+}
+.top-category-area .container .single-category-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 1;
+}
+.top-category-area .container .single-category-area .category-content {
+  z-index: 2;
+}
+.top-category-area .container .single-category-area .category-content a {
+  background: transparent;
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.top-category-area .container .single-category-area:hover .category-content a {
+  color: #0315ff;
 }/*# sourceMappingURL=style.css.map */

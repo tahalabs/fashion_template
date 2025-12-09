@@ -40,6 +40,7 @@ header {
                     transition-duration: 500ms;
                     border: none;
                     border-bottom: 1px solid #ebebeb;
+
                     &:focus {
                         width: 350px;
                         border: none;
@@ -74,12 +75,14 @@ header {
                 border-right: 1px solid #ebebeb;
                 line-height: 80px;
                 text-align: center;
+
                 img {
                     max-width: 25px;
                     height: auto;
                 }
             }
         }
+
         .user-login-info {
             width: 90px;
             height: 100%;
@@ -94,13 +97,15 @@ header {
                 border-right: 1px solid #ebebeb;
                 line-height: 80px;
                 text-align: center;
+
                 img {
                     max-width: 25px;
                     height: auto;
                 }
             }
         }
-        .cart-area   {
+
+        .cart-area {
             width: 90px;
             height: 100%;
             display: block;
@@ -114,6 +119,7 @@ header {
                 border-right: 1px solid #ebebeb;
                 line-height: 80px;
                 text-align: center;
+
                 img {
                     max-width: 25px;
                     height: auto;
@@ -125,33 +131,40 @@ header {
 
 }
 
-.welcome-area{
+.welcome-area {
     width: 100%;
     height: 600px;
-    .container{
-        padding: 0 5% ;
+
+    .container {
+        padding: 0 15px;
         margin: 0 auto;
         width: 100%;
-        .row{
+
+        .row {
             display: flex;
             flex-wrap: wrap;
-            align-items: center!important;
-            .col-12{
+            align-items: center !important;
+
+            .col-12 {
                 flex: 0 0 100%;
                 width: 100%;
-                .hero-content{
+
+                .hero-content {
                     background: transparent;
-                    h6{
+
+                    h6 {
                         font-size: 18px;
                         color: #787878;
                         margin-bottom: 10px;
                     }
-                    h2{
+
+                    h2 {
                         font-size: 60px;
                         color: #000000;
                         margin-bottom: 50px;
                     }
-                    .boutique-btn{
+
+                    .boutique-btn {
                         display: inline-block;
                         min-width: 170px;
                         height: 50px;
@@ -166,7 +179,7 @@ header {
                         line-height: 50px;
                         letter-spacing: 1.5px;
 
-                        &:hover{
+                        &:hover {
                             background-color: #dc3545;
                         }
                     }
@@ -175,13 +188,66 @@ header {
         }
 
     }
-    
+
 }
 
-.bg-img{
+.bg-img {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.top-category-area {
+    padding: 80px 0;
 
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        .single-category-area {
+            position: relative;
+            height: 240px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: all 0.5s ease;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.6); 
+                z-index: 1;
+            }
+
+            .category-content {
+                z-index: 2;
+                a {
+                    background: transparent;
+                    display: block;
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: #000000;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+                }
+            }
+
+            &:hover {
+                .category-content {
+                    a {
+                        color: #0315ff;
+                    }
+                }
+            }
+        }
+    }
+}
