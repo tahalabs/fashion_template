@@ -178,6 +178,7 @@ header {
                         font-weight: 600;
                         line-height: 50px;
                         letter-spacing: 1.5px;
+                        transition-duration: 200ms;
 
                         &:hover {
                             background-color: #dc3545;
@@ -203,6 +204,7 @@ header {
     .container {
         width: 100%;
         padding: 0 15px;
+
         .single-category-area {
             position: relative;
             height: 240px;
@@ -222,12 +224,13 @@ header {
                 left: 0;
                 height: 100%;
                 width: 100%;
-                background-color: rgba(255, 255, 255, 0.6); 
+                background-color: rgba(255, 255, 255, 0.6);
                 z-index: 1;
             }
 
             .category-content {
                 z-index: 2;
+
                 a {
                     background: transparent;
                     display: block;
@@ -245,6 +248,75 @@ header {
                 .category-content {
                     a {
                         color: #0315ff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.cta-area {
+    z-index: 1;
+    height: 550px;
+
+    .container {
+        padding: 0 15px;
+        position: relative;
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+
+            .col-12 {
+                flex: 0 0 100%;
+                max-width: 100%;
+
+                .cta-content {
+                    height: 550px;
+                    width: 100%;
+
+                    .cta-text {
+                        direction: rtl;
+                        padding-left: 250px;
+
+                        h6 {
+                            font-size: 24px;
+                            color: #dc3545;
+                            margin-bottom: 15px;
+                        }
+
+                        h2 {
+                            font-size: 60px;
+                            color: #000000;
+                            margin-bottom: 70px;
+                        }
+
+
+                        a {
+                            display: inline-block;
+                            min-width: 170px;
+                            text-decoration: none;
+                            height: 50px;
+                            background-color: #0315ff;
+                            padding: 0 40px;
+                            color: #ffffff;
+                            font-size: 18px;
+                            text-transform: uppercase;
+                            text-align: center;
+                            vertical-align: middle;
+                            font-weight: 600;
+                            line-height: 50px;
+                            letter-spacing: 1.5px;
+                            transition-duration: 200ms;
+
+                            &:hover {
+                                background-color: #dc3545;
+                            }
+
+                        }
                     }
                 }
             }

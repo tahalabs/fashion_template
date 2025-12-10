@@ -153,6 +153,7 @@ header .left .cart-area a img {
   font-weight: 600;
   line-height: 50px;
   letter-spacing: 1.5px;
+  transition-duration: 200ms;
 }
 .welcome-area .container .row .col-12 .hero-content .boutique-btn:hover {
   background-color: #dc3545;
@@ -209,4 +210,60 @@ header .left .cart-area a img {
 }
 .top-category-area .container .single-category-area:hover .category-content a {
   color: #0315ff;
+}
+
+.cta-area {
+  z-index: 1;
+  height: 550px;
+}
+.cta-area .container {
+  padding: 0 15px;
+  position: relative;
+}
+.cta-area .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.cta-area .container .row .col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.cta-area .container .row .col-12 .cta-content {
+  height: 550px;
+  width: 100%;
+}
+.cta-area .container .row .col-12 .cta-content .cta-text {
+  direction: rtl;
+  padding-left: 250px;
+}
+.cta-area .container .row .col-12 .cta-content .cta-text h6 {
+  font-size: 24px;
+  color: #dc3545;
+  margin-bottom: 15px;
+}
+.cta-area .container .row .col-12 .cta-content .cta-text h2 {
+  font-size: 60px;
+  color: #000000;
+  margin-bottom: 70px;
+}
+.cta-area .container .row .col-12 .cta-content .cta-text a {
+  display: inline-block;
+  min-width: 170px;
+  text-decoration: none;
+  height: 50px;
+  background-color: #0315ff;
+  padding: 0 40px;
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 1.5px;
+  transition-duration: 200ms;
+}
+.cta-area .container .row .col-12 .cta-content .cta-text a:hover {
+  background-color: #dc3545;
 }/*# sourceMappingURL=style.css.map */
