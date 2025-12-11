@@ -255,8 +255,6 @@ header {
     }
 }
 
-
-
 .cta-area {
     z-index: 1;
     height: 550px;
@@ -322,4 +320,38 @@ header {
             }
         }
     }
+}
+
+.new-arrivals-area {
+    padding: 80px 0;
+
+    .container {
+        padding: 0 15px;
+        width: 100%;
+        margin: 0 auto;
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+
+            .col-12 {
+                flex: 0 0 100%;
+                max-width: 100%;
+
+                .section-heading {
+                    margin-bottom: 50px;
+                    position: relative;
+
+                    h2 {
+                        font-size: 30px;
+                        margin-bottom: 0;
+                        text-transform: capitalize;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
 }
