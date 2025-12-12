@@ -9,7 +9,7 @@ $(document).ready(function () {
         }
     );
 
-
+    
     const $wrapper = $('.carousel-wrapper');
     const $container = $('#productCarousel');
     const intervalMs = 2500;    // اسلاید هر 1 ثانیه

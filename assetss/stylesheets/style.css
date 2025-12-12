@@ -379,4 +379,21 @@ header .left .cart-area a img {
   color: #999;
   margin: 0;
   font-size: 14px;
+}
+
+.brand-area {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
+  padding: 100px 5%;
+}
+.brand-area .container {
+  padding: 0 15px;
+  justify-content: space-evenly;
+}
+.brand-area .container .single-brand-logo {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */
